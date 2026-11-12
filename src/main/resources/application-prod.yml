@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://rm-2ze945p8x59x01p95.mysql.rds.aliyuncs.com:3306/cx_management?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: '@CXFutures@2024@db^*^'
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+jwt:
+  secret: 52ZvhALx8KVpWmlkqrvDAwLHazykSctFzT2V3BvJrLY9cdV1BOQ8vc1LHf+P5cdU
+
+logging:
+  level:
+    root: warn
+    com.cx.management: info

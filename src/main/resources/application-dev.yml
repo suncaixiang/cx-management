@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://rm-2ze899avjog4k7np5oo.mysql.rds.aliyuncs.com:3306/cx_management?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: 'future@2023@^*^'
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+jwt:
+  secret: cx-management-jwt-secret-key-2024-very-long-secret
+
+logging:
+  level:
+    root: info
+    com.cx.management: debug
