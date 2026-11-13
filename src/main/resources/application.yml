@@ -11,10 +11,21 @@ spring:
     time-zone: Asia/Shanghai
     serialization:
       write-dates-as-timestamps: false
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 25MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       maximum-pool-size: 10
+
+logging:
+  file:
+    name: logs/cx-management.log
+  level:
+    root: info
+    com.cx.management: debug
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml

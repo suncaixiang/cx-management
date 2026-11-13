@@ -5,11 +5,16 @@ import lombok.Getter;
 @Getter
 public class BusinessException extends RuntimeException {
 
-    private final int code;
+    private int code;
 
     public BusinessException(String message) {
         super(message);
         this.code = 500;
+    }
+
+
+    public BusinessException(Throwable cause) {
+        super(cause);
     }
 
     public BusinessException(int code, String message) {
